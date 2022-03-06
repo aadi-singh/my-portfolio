@@ -1,0 +1,217 @@
+.a{
+    height:100vh;
+    display: flex;    
+    height:100vh;
+    background-color: #00ffbf;
+    position: relative;
+ 
+}
+
+.a-left{
+ display: flex;
+ flex: 1;
+ position: relative;
+}
+.a-right{
+    display: flex;
+    flex:1;
+    padding: 40px;
+    margin: 20px;
+    position: relative;
+    color: aliceblue;
+}
+.a-right-wrapper{
+    
+    padding: 20px;
+    margin: 40px;
+    position: absolute;
+}
+.heading{
+    font-size: 4.2em;
+    font-weight: bold;
+    text-shadow: 3px 3px  #8a2be2;
+    text-indent: 130px;
+}
+.heading-div{
+    padding: 10px;
+    
+    color: #000;
+    position : absolute;
+    top:140px;
+    left: 145px;
+    background: rgb(255, 254, 254);
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.6;
+    /* CSS3 */
+    width: 660px;
+    
+    text-align: justify;
+    
+}
+.heading2{
+    font-size: 2.5em;
+    line-height: 35px;
+font-weight: bold;
+}
+.a-left-wrapper{
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+}
+.svg{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 94.4% ;
+    height: 100%;
+    background: #000;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    margin: -21px;
+    transform: scaleX(-1);
+}
+.svg1{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    border: solid 4px #8a2be2;
+    border-radius: 55px;
+   display: flex;
+    height: 62%;
+    background-color: #000;
+    object-fit: contain;
+    width: 410px;
+    position: absolute;
+    top: 120px;
+    left: 220px;           /* to move the svg behind the image parvati */
+}
+
+.effect-layla {
+  
+    width: 250px;
+    height: 550px;
+    position: absolute;
+    top: 250px;
+    left: 370px;                /* to move the image parvati */
+  }
+  
+  figure.effect-layla img {
+    height: 620px;
+    position: absolute;
+    top: -35px;
+    left: -80px;
+    border-radius: 50px;
+  }
+  
+  figure.effect-layla figcaption {
+    padding: 3em;
+  }
+  
+  figure.effect-layla figcaption::before,
+  figure.effect-layla figcaption::after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+  }
+  
+  figure.effect-layla figcaption::before {
+    top: 50px;
+    right: 30px;
+    bottom: 50px;
+    left: 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  
+  figure.effect-layla figcaption::after {
+    top: 30px;
+    right: 50px;
+    bottom: 30px;
+    left: 50px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1,0);
+    transform: scale(1,0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  
+  figure.effect-layla h2 {
+    padding-top: 26%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+  }
+  
+  figure.effect-layla p {
+    padding: 0.5em 2em;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+  }
+  
+  figure.effect-layla img,
+  figure.effect-layla h2 {
+    -webkit-transform: translate3d(0,-30px,0);
+    transform: translate3d(0,-30px,0);
+  }
+  
+  figure.effect-layla img,
+  figure.effect-layla figcaption::before,
+  figure.effect-layla figcaption::after,
+  figure.effect-layla p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+  }
+  
+  figure.effect-layla:hover img {
+    opacity: .7;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  figure.effect-layla:hover figcaption::before,
+  figure.effect-layla:hover figcaption::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  figure.effect-layla:hover h2,
+  figure.effect-layla:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+  
+  figure.effect-layla:hover figcaption::after,
+  figure.effect-layla:hover h2,
+  figure.effect-layla:hover p,
+  figure.effect-layla:hover img {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+
+  }
+  .a-desc{
+      font-size: 35px;
+      line-height: 30px;
+  }
+  figcaption h2{
+      opacity: 0;
+      color: #fff;
+   text-align: center;
+ 
+  }
+  figure.effect-layla:hover h2{
+      position: relative;
+      object-fit: contain;
+      top: 150px;
+   text-align: center;
+   
+      
+  }

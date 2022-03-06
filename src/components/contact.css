@@ -1,0 +1,141 @@
+.container_1{
+    display: flex;
+    background-color:#00ffbf;
+    height: 100vh;
+    
+    
+}
+.container_2{
+    
+    background-color: azure;
+    display: flex;
+    height: 98vh;
+    position: relative;
+    left: 20px;
+    width: 98%;
+    border-radius: 30px;
+}
+.c-left{
+    flex: 1;
+}
+.c-right{
+    flex:1;
+}
+.c-left-title{
+    position: relative;
+    top: 150px;
+    left:   150px;     /* to move the wohole left text and apha numeric */
+}
+.c-heading_1{
+    font-weight: bolder;
+    font-size: 6em;
+    line-height: 95px;
+}
+.c-left-para{
+    font-size: 2.5em;
+}
+.phone{
+    position: relative;
+    top: 30px;
+    left: -1px;
+    height: 40px;
+    width: 40px;
+}
+.number{
+    font-size: 2.5em;
+    position: relative;
+    top:35px;
+    left:35px;
+}
+.email{
+    position: relative;
+    top: 150px;
+    left: -250px;
+    height: 40px;
+    width: 40px;
+}
+#n-1.number{
+    top: 155px;
+    left: -200px;
+}
+.location{
+    position: relative;
+    top: 270px;
+    left: -685px;
+    height: 40px;
+    width: 40px;
+}
+#n-2{
+    top: 215px;
+    left: 95px;
+    line-height: 35px;
+    justify-content: center;
+}
+.c-right-text{
+    position: relative;
+    top: 150px;
+    left:   70px; 
+}
+.c-right-heading{
+font-size: 2.2em;   
+line-height: 35px; 
+}
+.c-right-heading  .bold{
+    font-weight: bolder;
+}
+.label{
+    position: relative;
+    font-size: 2em;
+    top: 40px;
+}
+.input-name{
+    position: relative;
+    top: 35px;
+    left:-5px;
+}
+.textarea{
+    position: relative;
+    top: 188px;
+    left: 5px;
+    width: 500px;
+}
+.input-subject{
+    position: relative;
+top:75px;
+left: 20px;;
+}
+.input-email{
+    position: relative;
+    top:120px;
+    left: 40px;
+    }
+
+    .label1{
+        position: relative;
+    font-size: 2em;
+    top: 75px;
+    }
+    .label2{
+        position: relative;
+    font-size: 2em;
+    top: 120px;
+    }
+    .label3{
+        position: relative;
+    font-size: 2em;
+    top: 70px;
+    }
+    .button{
+        position: relative;
+        top:300px;
+        font-size: 2em;
+        left: -620px;
+        width: 200px;
+        font-weight: bold;
+        text-align: center;
+        background-color: greenyellow;
+    }
+    .textarea::-webkit-input-placeholder {
+        font-size: 30px;
+        
+    }

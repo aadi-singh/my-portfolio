@@ -1,0 +1,180 @@
+.i{
+    display: flex;
+    height:100vh;
+    background-color: #00ffbf;
+    
+    
+}
+.i-left{
+    flex:1;
+    width: 200px;
+    padding: 20px;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   padding: 40px;
+}
+
+.i-right{
+    flex:1;
+    position: relative;
+}
+.i-left-wrapper{
+    padding: 25px;
+    height: 70%;
+   margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.i-intro{
+    margin-bottom: -15px;
+    font-size: 55px;
+    font-weight: 300 ;
+   
+}
+.i-name{
+    font-size: 75px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    margin-bottom: -10px;
+    
+  
+}
+.hover08{
+    position: absolute;
+    top: 70px;
+    right: 280px;
+  
+}
+.i-title{
+    height: 55px;
+    overflow: hidden;
+    font-weight: bold;
+    color:blueviolet;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.i-title-wrapper{   
+    height: 100%;
+    animation : move 5s linear infinite alternate;
+}
+@keyframes move {
+    33.33% {
+        transform: translateY(-50px);
+    }
+    66.66% {
+        transform: translateY(-105px);
+    } 
+    100% {
+        transform: translateY(-160px);
+    } 
+}
+.i-title-item{
+    font-size: 55px;
+    
+}
+
+.i-img {
+    
+    object-fit: contain;
+    width: 108%;
+    height: 108%;
+  }
+
+
+.efg .hover08 img {
+    
+    -webkit-filter: grayscale(100%)  ;
+    filter: grayscale(100%) ; 
+    -webkit-transition: 3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+ 
+
+@keyframes popout {
+    from{transform:scale(1)  translateY(0px) translateX(-0px);
+    }
+    50%{transform:scale(1.1) translateY(-25px) translateX(-100px);
+        }
+    to{transform:scale(1) translateY(0px) translateX(-0px);
+    }
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(1)}
+    50%{-webkit-transform:scale(1.1)}
+    to{-webkit-transform:scale(1)}
+}
+
+
+
+.i-desc{
+
+    font-size: 35px;
+    line-height: .75em;
+    width: 700px;
+} 
+.abc{
+    position: relative; 
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.efg{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}  
+.abc  .efg:hover img{
+    animation: move1 3s ease-in-out;
+    -webkit-filter: grayscale(1.5) ;
+    filter: grayscale(0) ;
+    animation: popout 3s ease-in-out;
+    -webkit-animation: popout 3s ease-in-out;
+}
+.abc  .efg:hover{
+    animation: move1 3s ease-in-out;}
+@keyframes move1 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.i-bg{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    width: 100%;
+    height: 100%;
+    background: #000;
+    object-fit: contain;
+    position: absolute;
+    
+}
+
+
+
+.i-svg{
+    position: absolute;
+    top:58%;
+    right:50%;
+   box-sizing: border-box;
+   width: 45px;
+   height: 45px; 
+   animation: blink 1.5s linear infinite;
+   color: #8a2be2;
+}
+@keyframes blink {
+0%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+    
+}
